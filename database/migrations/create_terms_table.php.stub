@@ -16,7 +16,7 @@ class CreateTermsTable extends Migration
     {
         Schema::create('terms', function (Blueprint $table) {
             $table->unsignedBigInteger('id', true);
-            $table->longText('terms')->nullable();
+            $table->json('terms')->nullable();
             $table->timestamps();
         });
 
