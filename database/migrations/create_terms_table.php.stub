@@ -20,9 +20,6 @@ class CreateTermsTable extends Migration
             $table->timestamps();
         });
 
-        Term::create([
-            'terms' => 'My first terms',
-        ]);
     }
 
     /**
